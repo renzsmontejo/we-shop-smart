@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class EnsureAdmin
+{
+    public function handle(
+        Request $request,
+        Closure $next
+    ): Response {
+
+        // Only allow accounts with admin role
+        abort_unless(
+            $request->user()?->role === 'admin',
+            403,
+            'Admins only.'
+        );
+
+        return $next($request);
+    }
+}

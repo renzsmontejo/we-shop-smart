@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="tote"><defs>
+      <linearGradient id="dark" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#425a4d"/><stop offset="1" stop-color="#1d3328"/></linearGradient>
+      <linearGradient id="sage" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b3ccb0"/><stop offset="1" stop-color="#789b80"/></linearGradient>
+      <linearGradient id="sand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f3e4cd"/><stop offset="1" stop-color="#d6bda2"/></linearGradient>
+      <linearGradient id="cream" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e8dfca"/></linearGradient>
+      <linearGradient id="metal" x1="0" x2="1"><stop stop-color="#86918a"/><stop offset=".3" stop-color="#e2e8df"/><stop offset=".7" stop-color="#a4b4a9"/><stop offset="1" stop-color="#5e7567"/></linearGradient>
+      <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-opacity=".17"/></filter>
+      <filter id="sm"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".10"/></filter>
+      </defs><g filter="url(#sh)"><path d="M222 213v-58c0-47 30-80 78-80s78 33 78 80v58" stroke="#8b9f87" stroke-width="21" fill="none"/><path d="M237 210v-54c0-40 22-62 63-62s63 22 63 62v54" stroke="#e6e1c9" stroke-width="9" fill="none"/><path d="M156 188h288l32 322H124z" fill="url(#sage)"/><path d="M170 197h258l28 284H142z" fill="#b9cbb2"/><path d="M201 222h198" stroke="#97b096" stroke-width="8"/><path d="M285 315c-18 22-18 44 15 62 34-20 36-40 16-62" stroke="#7d9b7c" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M190 220l-30 264M410 218l27 266" stroke="#d2dfc8" stroke-width="7" opacity=".75"/></g></svg>

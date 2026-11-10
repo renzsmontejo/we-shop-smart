@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="headphones"><defs>
+      <linearGradient id="dark" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#425a4d"/><stop offset="1" stop-color="#1d3328"/></linearGradient>
+      <linearGradient id="sage" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b3ccb0"/><stop offset="1" stop-color="#789b80"/></linearGradient>
+      <linearGradient id="sand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f3e4cd"/><stop offset="1" stop-color="#d6bda2"/></linearGradient>
+      <linearGradient id="cream" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e8dfca"/></linearGradient>
+      <linearGradient id="metal" x1="0" x2="1"><stop stop-color="#86918a"/><stop offset=".3" stop-color="#e2e8df"/><stop offset=".7" stop-color="#a4b4a9"/><stop offset="1" stop-color="#5e7567"/></linearGradient>
+      <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-opacity=".17"/></filter>
+      <filter id="sm"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".10"/></filter>
+      </defs><g filter="url(#sh)"><path d="M147 320V256C147 156 214 91 300 91s153 65 153 165v65" fill="none" stroke="#20382d" stroke-width="52" stroke-linecap="round"/><path d="M151 317V257c0-100 66-165 149-165 63 0 114 36 139 91" fill="none" stroke="#809b85" stroke-width="16" stroke-linecap="round"/><rect x="111" y="281" width="93" height="189" rx="44" fill="#243a2e"/><rect x="130" y="303" width="74" height="147" rx="34" fill="#577363"/><rect x="395" y="281" width="93" height="189" rx="44" fill="#23392e"/><rect x="395" y="303" width="74" height="147" rx="34" fill="#597967"/><path d="M149 322c20-12 34 13 33 58s-15 66-33 54" fill="none" stroke="#90aa94" stroke-width="7" opacity=".7"/><path d="M450 317c-26-10-33 25-32 63s9 54 32 52" fill="none" stroke="#91ae94" stroke-width="7" opacity=".55"/></g></svg>

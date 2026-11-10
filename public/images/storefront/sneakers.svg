@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="sneakers"><defs>
+      <linearGradient id="dark" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#425a4d"/><stop offset="1" stop-color="#1d3328"/></linearGradient>
+      <linearGradient id="sage" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b3ccb0"/><stop offset="1" stop-color="#789b80"/></linearGradient>
+      <linearGradient id="sand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f3e4cd"/><stop offset="1" stop-color="#d6bda2"/></linearGradient>
+      <linearGradient id="cream" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e8dfca"/></linearGradient>
+      <linearGradient id="metal" x1="0" x2="1"><stop stop-color="#86918a"/><stop offset=".3" stop-color="#e2e8df"/><stop offset=".7" stop-color="#a4b4a9"/><stop offset="1" stop-color="#5e7567"/></linearGradient>
+      <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-opacity=".17"/></filter>
+      <filter id="sm"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".10"/></filter>
+      </defs><g filter="url(#sh)" transform="rotate(-8 300 300)"><path d="M97 331c49 0 91-28 123-87l57-12c35 59 74 78 127 83l88 19c21 5 28 16 31 33v39H73v-25c0-31 8-50 24-50z" fill="#e6d9c3"/><path d="M91 340c41 0 88-31 129-97l42 3c22 65 79 104 150 107l110 23v26H73v-30z" fill="#f7eee0"/><path d="M74 398h450v33c0 19-17 30-37 30H104c-19 0-30-12-30-31z" fill="#fdfbf3"/><path d="M74 411h450" stroke="#bbc0af" stroke-width="8"/><path d="M123 449h331" stroke="#d1d5c7" stroke-width="5"/><path d="M223 249l-22 43 68 20M252 248l-20 47 65 19M281 258l-18 43 65 13" fill="none" stroke="#a9b3a2" stroke-width="8" stroke-linecap="round"/><path d="M405 357c32-2 77 12 102 19" fill="none" stroke="#c3c7b7" stroke-width="6"/><path d="M87 382h79" stroke="#d8d4c8" stroke-width="8"/></g></svg>

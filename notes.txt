@@ -1,0 +1,102 @@
+PS C:\Projects\we-shop-smart> php artisan tinker
+
+customer and admin sample account:
+admin@weshopsmart.com
+Password@12345
+
+customer@weshopsmart.com
+Customer@12345
+
+
+
+Psy Shell v0.12.24 (PHP 8.4.20 — cli) by Justin Hileman
+New PHP manual is available (latest: 3.1.2). Update with `doc --update-manual`
+> use App\Models\User;                                                                                                                                                
+
+> use Illuminate\Support\Facades\Hash;                                                                                                                                
+
+>                                                                                                                                                                     
+> // CREATE ADMIN ACCOUNT                                                                                                                                             
+
+> User::updateOrCreate(                                                                                                                                               
+.     ['email' => 'admin@weshopsmart.com'],                                                                                                                           
+.     [                                                                                                                                                               
+.         'name' => 'System Administrator',                                                                                                                           
+.         'password' => Hash::make('Admin@12345'),                                                                                                                    
+.         'role' => 'admin',                                                                                                                                          
+.     ]                                                                                                                                                               
+. );                                                                                                                                                                  
+
+= App\Models\User {#8278
+    email: "admin@weshopsmart.com",
+    name: "System Administrator",
+    #password: "\$2y\$12\$1rcz8fKjf6DhKEcolaNH3u2P58GrxBg/q/49SLfMsWYcPaUOggJz6",
+    updated_at: "2026-11-10 03:49:58",
+    created_at: "2026-11-10 03:49:58",
+    id: 1,
+  }
+
+>                                                                                                                                                                     
+> // CREATE CUSTOMER ACCOUNT                                                                                                                                          
+
+> User::updateOrCreate(                                                                                                                                               
+.     ['email' => 'customer@weshopsmart.com'],                                                                                                                        
+.     [                                                                                                                                                               
+.         'name' => 'Sample Customer',                                                                                                                                
+.         'password' => Hash::make('Customer@12345'),                                                                                                                 
+.         'role' => 'user',                                                                                                                                           
+.     ]                                                                                                                                                               
+. );                                                                                                                                                                  
+
+= App\Models\User {#8335
+    email: "customer@weshopsmart.com",
+    name: "Sample Customer",
+    #password: "\$2y\$12\$RTrvy1wBKAHvX4VAvb1tgexC5J90a3beVUzMJU980Kp.5hPXniMx6",
+    updated_at: "2026-11-10 03:50:01",
+    created_at: "2026-11-10 03:50:01",
+    id: 2,
+  }
+
+>     
+
+
+
+
+$admin->forceFill(['role' => 'admin'])->save();
+
+
+
+
+> $admin = \App\Models\User::where('email', 'admin@weshopsmart.com')->firstOrFail();                                                                                  
+
+= App\Models\User {#7530
+    id: 1,
+    name: "System Administrator",
+    email: "admin@weshopsmart.com",
+    email_verified_at: null,
+    #password: "\$2y\$12\$1rcz8fKjf6DhKEcolaNH3u2P58GrxBg/q/49SLfMsWYcPaUOggJz6",
+    #remember_token: null,
+    created_at: "2026-11-10 03:49:58",
+    updated_at: "2026-11-10 03:49:58",
+    role: "user",
+  }
+
+> \App\Models\User::select('id', 'name', 'email', 'role')->get();                                                                                                     
+
+= Illuminate\Database\Eloquent\Collection {#7558
+    all: [
+      App\Models\User {#7559
+        id: 1,
+        name: "System Administrator",
+        email: "admin@weshopsmart.com",
+        role: "user",
+      },
+      App\Models\User {#7509
+        id: 2,
+        name: "Sample Customer",
+        email: "customer@weshopsmart.com",
+        role: "user",
+      },
+    ],
+  }
+
